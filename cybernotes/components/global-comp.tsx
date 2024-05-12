@@ -52,9 +52,9 @@ export function GlobalComp(Datas : any) {
               </div>
             </div> */}
             {
-              Datas.Datas.map((data : any) => {
+              Datas.Datas.map((data: any, index: number) => {
                 return (
-                  <div className="rounded-lg border border-gray-200 p-6 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow dark:border-gray-800">
+                  <div key={index} className="rounded-lg border border-gray-200 p-6 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow dark:border-gray-800">
                     <div className="space-y-4">
                       <h3 className="text-xl font-semibold">{data.title}</h3>
                       <p className="text-gray-500 dark:text-gray-400">{data.description}</p>

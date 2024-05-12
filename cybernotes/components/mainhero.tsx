@@ -27,6 +27,14 @@ import Link from "next/link"
 import { CardContent, Card } from "@/components/ui/card"
 import { JSX, SVGProps } from "react"
 
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'spline-viewer': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & { url?: string };
+    }
+  }
+}
+
 export function Mainhero() {
   return (
     <div key="1" className="flex flex-col min-h-[100dvh]">
@@ -82,8 +90,8 @@ export function Mainhero() {
               </div>
               
               
-              <script type="module" src="https://unpkg.com/@splinetool/viewer@1.3.1/build/spline-viewer.js"></script>
-<spline-viewer url="https://prod.spline.design/UhcwGnoyfV3lHKgr/scene.splinecode"
+              <script type="module" async src="https://unpkg.com/@splinetool/viewer@1.3.1/build/spline-viewer.js"></script>
+              <spline-viewer url="https://prod.spline.design/UhcwGnoyfV3lHKgr/scene.splinecode"
 ></spline-viewer>
                
               
