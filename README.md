@@ -32,27 +32,27 @@ CREATE TABLE Materials (
     Semester INT,
     SubjectCode VARCHAR(10),
     SubjectName VARCHAR(100),
-    MaterialLink VARCHAR(100),
-    Title VARCHAR(100),
-    Description VARCHAR(100)
+    url VARCHAR(100),
+    title VARCHAR(100),
+    description VARCHAR(100)
 );
 
 CREATE TABLE LabMaterials (
     Semester INT,
     SubjectCode VARCHAR(10),
     SubjectName VARCHAR(100),
-    MaterialLink VARCHAR(100),
-    Title VARCHAR(100),
-    Description VARCHAR(100)
+    url VARCHAR(100),
+    title VARCHAR(100),
+    description VARCHAR(100)
 );
 
 CREATE TABLE QuestionPapers (
     Semester INT,
     SubjectCode VARCHAR(10),
     SubjectName VARCHAR(100),
-    MaterialLink VARCHAR(100),
-    Title VARCHAR(100),
-    Description VARCHAR(100)
+    url VARCHAR(100),
+    title VARCHAR(100),
+    description VARCHAR(100)
 );
 ```
 
