@@ -92,8 +92,6 @@ export function Mainhero() {
                   </div>
               </div>
               
-              
-              
               <Spline scene="https://prod.spline.design/AtMATjXmPTRAEn6S/scene.splinecode" />     
               
             </div>
