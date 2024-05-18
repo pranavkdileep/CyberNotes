@@ -10,7 +10,7 @@ const datas: Datas[] = [
   {
     title: 'MATHEMATICAL FOUNDATIONS FOR SECURITY SYSTEMS',
     description: 'Download the Materials of MATHEMATICAL FOUNDATIONS FOR SECURITY SYSTEMS 2019 scheme',
-    url: '/materials/s3/mfss'
+    url: '/materials/s4/mfss'
   },
 ]
 

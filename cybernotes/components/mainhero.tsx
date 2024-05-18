@@ -71,7 +71,7 @@ export function Mainhero() {
                     Cyber Notes
                   </h1>
                   <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                    A platform to access study materials and syllabi for students of b tech computer science engineering (syber security) in KTU university.
+                    A platform to access study materials and syllabi for students of b tech computer science engineering (cyber security) in KTU university.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">

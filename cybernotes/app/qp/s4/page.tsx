@@ -12,7 +12,7 @@ const datas: Datas[] = [
   {
     title: 'Mathematical Foundation of Secure Systems',
     description: 'Download The Previous Year Question Papers of Mathematical Foundation of Secure Systems',
-    url: '/qp/s3/mfss'
+    url: '/qp/s4/mfss'
   }]
 function page() {
     return (
