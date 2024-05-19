@@ -23,9 +23,9 @@ CREATE TABLE syllabus (
     Semester INT,
     SubjectCode VARCHAR(10),
     SubjectName VARCHAR(100),
-    MaterialLink VARCHAR(100),
-    Title VARCHAR(100),
-    Description VARCHAR(100)
+    url VARCHAR(100),
+    title VARCHAR(100),
+    description VARCHAR(100)
 );
 
 CREATE TABLE Materials (
@@ -54,6 +54,13 @@ CREATE TABLE QuestionPapers (
     title VARCHAR(100),
     description VARCHAR(100)
 );
+
+CREATE TABLE Subjects (
+    title VARCHAR(100),
+    description VARCHAR(100),
+    url VARCHAR(100),
+    Semester INT
+);
 ```
 
 # Insert Queries
@@ -65,6 +72,8 @@ INSERT INTO Materials VALUES (1, 'CS101', 'Computer Science', 'https://www.googl
 INSERT INTO LabMaterials VALUES (1, 'CS101', 'Computer Science', 'https://www.google.com', 'LabMaterials', 'LabMaterials for Computer Science');
 
 INSERT INTO QuestionPapers VALUES (1, 'CS101', 'Computer Science', 'https://www.google.com', 'QuestionPapers', 'QuestionPapers for Computer Science');
+
+INSERT INTO Subjects VALUES ('MATHEMATICAL FOUNDATIONS FOR SECURITY SYSTEMS', 'Computer Science cyber', 'mat266',4);
 ``` 
 # Read Queries
 ```sql
@@ -72,3 +81,7 @@ SELECT DISTINCT Semester FROM syllabus;
 SELECT DISTINCT Subjectname FROM syllabus WHERE Semester = 1;
 SELECT MaterialLink, Title, Description FROM syllabus WHERE Semester = 1 AND SubjectCode = 'CS101';
 ```
+# Dynamic Routers
+
+[semester]
+[semester]/[subjectcode]

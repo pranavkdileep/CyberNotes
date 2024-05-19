@@ -20,14 +20,15 @@ export interface Datas {
 export default async function Cart({
     params
   } : {
-    params: { semester: string }
+    params: { semester: string, subjectcode: string}
   }): Promise<JSX.Element> {
     let semnumber = params.semester.replace('s','')
-    const { rows } = await sql`SELECT title,description,url from Subjects where semester=${semnumber}`;
+    const { rows } = await sql`SELECT title,description,url from materials where semester=${semnumber} and subjectcode=${params.subjectcode.toUpperCase()}`;
+    console.log(rows)
     const datas: Datas[] = rows.map((row) => ({
         title: row.title,
         description: row.description,
-        url: `/labmaterials/${params.semester}/${row.url}`
+        url: `${row.url}`
       }));
   return (
     <GlobalComp Datas = {datas} >

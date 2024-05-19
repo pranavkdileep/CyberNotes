@@ -27,7 +27,7 @@ export default async function Cart({
     const datas: Datas[] = rows.map((row) => ({
         title: row.title,
         description: row.description,
-        url: `/labmaterials/${params.semester}/${row.url}`
+        url: `/qp/${params.semester}/${row.url}`
       }));
   return (
     <GlobalComp Datas = {datas} >
