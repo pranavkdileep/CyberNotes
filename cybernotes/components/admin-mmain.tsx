@@ -13,8 +13,8 @@ import { useRouter } from "next/navigation";
 import process from "process";
 
 
-const USENAME = process.env.ADMIN_USERNAME || "admin"
-const PASSWORD = process.env.ADMIN_PASSWORD || "admin"
+const USENAME = process.env.ADMIN_USERNAME
+const PASSWORD = process.env.ADMIN_PASSWORD
 
 export function AdminMmain() {
   const router = useRouter();
