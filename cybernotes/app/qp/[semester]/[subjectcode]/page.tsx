@@ -23,7 +23,7 @@ export default async function Cart({
     params: { semester: string, subjectcode: string}
   }): Promise<JSX.Element> {
     let semnumber = params.semester.replace('s','')
-    const { rows } = await sql`SELECT title,description,url from QuestionPapers where semester=${semnumber} and subjectcode=${params.subjectcode.toUpperCase()}`;
+    const { rows } = await sql`SELECT title,description,url from QuestionPapers where semester=${semnumber} and subjectcode=${params.subjectcode}`;
     console.log(rows)
     const datas: Datas[] = rows.map((row) => ({
         title: row.title,
