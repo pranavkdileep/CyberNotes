@@ -21,6 +21,7 @@ export function AdminMmain() {
   if(typeof window !== "undefined") {
     if(sessionStorage.getItem("admin") != USENAME && sessionStorage.getItem("pass") != PASSWORD) {
       router.push("/admin/login")
+      
     }
   }
   const [materialType, setMaterialType] = useState("");
