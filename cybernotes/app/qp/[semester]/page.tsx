@@ -1,6 +1,7 @@
 import React from 'react'
 import { sql } from '@vercel/postgres'
 import { GlobalComp } from '@/components/global-comp'
+import { unstable_noStore as noStore } from 'next/cache';
 export interface Datas {
     title: string
     description: string
@@ -23,6 +24,7 @@ export default async function Cart({
     params: { semester: string }
   }): Promise<JSX.Element> {
     let semnumber = params.semester.replace('s','')
+    noStore();
     const { rows } = await sql`SELECT DISTINCT Subjects.title,Subjects.description,Subjects.url from Subjects,QuestionPapers where Subjects.url = QuestionPapers.subjectcode and QuestionPapers.semester = ${semnumber}`;
     const datas: Datas[] = rows.map((row) => ({
         title: row.title,
