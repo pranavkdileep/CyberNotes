@@ -23,7 +23,7 @@ export default async function Cart({
     params: { semester: string }
   }): Promise<JSX.Element> {
     let semnumber = params.semester.replace('s','')
-    const { rows } = await sql`SELECT Subjects.title,Subjects.description,Subjects.url from Subjects,materials where Subjects.url = materials.subjectcode and materials.semester = ${semnumber}`;
+    const { rows } = await sql`SELECT DISTINCT Subjects.title,Subjects.description,Subjects.url from Subjects,materials where Subjects.url = materials.subjectcode and materials.semester = ${semnumber}`;
     const datas: Datas[] = rows.map((row) => ({
         title: row.title,
         description: row.description,
