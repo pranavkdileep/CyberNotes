@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { sql } from "@vercel/postgres";
 import { useState,useEffect } from "react"
-import { addMaterials,addSubject } from "@/app/admin/page";
+import { addMaterials,addSubject } from "@/app/admin/api";
 
 
 

@@ -81,6 +81,16 @@ SELECT DISTINCT Semester FROM syllabus;
 SELECT DISTINCT Subjectname FROM syllabus WHERE Semester = 1;
 SELECT MaterialLink, Title, Description FROM syllabus WHERE Semester = 1 AND SubjectCode = 'CS101';
 ```
+# clean tables
+```sql
+DELETE FROM syllabus;
+DELETE FROM Materials;
+DELETE FROM LabMaterials;
+DELETE FROM QuestionPapers;
+DELETE FROM Subjects;
+```
+
+
 # Dynamic Routers
 
 [semester]
