@@ -14,14 +14,19 @@ export function AdminLogin() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState(""); 
   const router = useRouter();
-  if(sessionStorage.getItem("admin") === USENAME && sessionStorage.getItem("pass") === PASSWORD) { 
-    router.push("/admin")
+  if(typeof window !== "undefined") {
+    if(sessionStorage.getItem("admin") === USENAME && sessionStorage.getItem("pass") === PASSWORD) {
+      router.push("/admin")
+    }
   }
+  
 
   const handlelogin = () => {
     if(username === USENAME && password === PASSWORD) {
-      sessionStorage.setItem("admin", username)
-      sessionStorage.setItem("pass", password)
+      if(typeof window !== "undefined") {
+        sessionStorage.setItem("admin", username)
+        sessionStorage.setItem("pass", password)
+      }
       router.push("/admin")
   }else{
     alert("Invalid username or password")
