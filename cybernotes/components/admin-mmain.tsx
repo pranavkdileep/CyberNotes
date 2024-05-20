@@ -81,7 +81,7 @@ export function AdminMmain() {
             } type="number" />
           </div>
           <div className="grid gap-2">
-            <Label htmlFor="subjectCode">Subject Code</Label>
+            <Label htmlFor="subjectCode">Subject Code (* Small Letter And No Spaces. like:- mat266 )</Label>
             <Input id="subjectCode" placeholder="Enter subject code" onChange={
               (e) => {
                 setSubjectCode(e.target.value);
@@ -149,7 +149,7 @@ export function AdminMmain() {
             } />
           </div>
           <div className="grid gap-2">
-            <Label htmlFor="subjectCode">Subject Code</Label>
+            <Label htmlFor="subjectCode">Subject Code (* Small Letter And No Spaces. like:- mat266 )</Label>
             <Input id="subjectCode" placeholder="Enter subject code" onChange={
               (e) => {
                 setSubjectCode(e.target.value);
