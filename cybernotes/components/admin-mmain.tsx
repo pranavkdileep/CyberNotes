@@ -10,6 +10,7 @@ import { sql } from "@vercel/postgres";
 import { useState,useEffect } from "react"
 import { addMaterials,addSubject } from "@/app/admin/api";
 import { useRouter } from "next/navigation";
+import process from "process";
 
 
 const USENAME = process.env.ADMIN_USERNAME || "admin"
