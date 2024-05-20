@@ -94,4 +94,4 @@ DELETE FROM Subjects;
 # Dynamic Routers
 
 [semester]
-[semester]/[subjectcode]
+[semester]/[subjectcode] 
