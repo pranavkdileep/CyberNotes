@@ -17,6 +17,7 @@ export function AdminLogin() {
       router.push("/admin")
     }
   }
+  console.log(USERNAME,PASSWORD)
   
 
   const handlelogin = () => {
