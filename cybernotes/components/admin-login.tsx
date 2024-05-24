@@ -5,24 +5,22 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import process from "process";
+import { USERNAME,PASSWORD } from "@/server/logincredentials";
 
-const USENAME = process.env.ADMIN_USERNAME
-const PASSWORD = process.env.ADMIN_PASSWORD
 
 export function AdminLogin() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState(""); 
   const router = useRouter();
   if(typeof window !== "undefined") {
-    if(sessionStorage.getItem("admin") === USENAME && sessionStorage.getItem("pass") === PASSWORD) {
+    if(sessionStorage.getItem("admin") === USERNAME && sessionStorage.getItem("pass") === PASSWORD) {
       router.push("/admin")
     }
   }
   
 
   const handlelogin = () => {
-    if(username === USENAME && password === PASSWORD) {
+    if(username === USERNAME && password === PASSWORD) {
       if(typeof window !== "undefined") {
         sessionStorage.setItem("admin", username)
         sessionStorage.setItem("pass", password)

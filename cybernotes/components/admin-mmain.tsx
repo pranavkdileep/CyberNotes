@@ -10,16 +10,15 @@ import { sql } from "@vercel/postgres";
 import { useState,useEffect } from "react"
 import { addMaterials,addSubject } from "@/app/admin/api";
 import { useRouter } from "next/navigation";
-import process from "process";
+import { USERNAME,PASSWORD } from "@/server/logincredentials";
 
 
-const USENAME = process.env.ADMIN_USERNAME
-const PASSWORD = process.env.ADMIN_PASSWORD
+
 
 export function AdminMmain() {
   const router = useRouter();
   if(typeof window !== "undefined") {
-    if(sessionStorage.getItem("admin") != USENAME && sessionStorage.getItem("pass") != PASSWORD) {
+    if(sessionStorage.getItem("admin") != USERNAME && sessionStorage.getItem("pass") != PASSWORD) {
       router.push("/admin/login")
       
     }
