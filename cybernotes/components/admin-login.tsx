@@ -42,7 +42,7 @@ export function AdminLogin() {
         <CardContent className="grid gap-4">
           <div>
             <Label className="sr-only" htmlFor="username">
-              Username
+              Username {USERNAME}
             </Label>
             <Input className="w-full" id="username" placeholder="Username" type="text" onChange={
               (e) => setUsername(e.target.value)
