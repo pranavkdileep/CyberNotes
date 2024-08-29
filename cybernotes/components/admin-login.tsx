@@ -37,12 +37,12 @@ export function AdminLogin() {
       <Card className="max-w-md mx-auto">
         <CardHeader>
           <CardTitle className="text-2xl">Login</CardTitle>
-          <CardDescription>Enter your credentials to access your account.</CardDescription>
+          <CardDescription>Enter your credentials to access your account. {USERNAME}</CardDescription>
         </CardHeader>
         <CardContent className="grid gap-4">
           <div>
             <Label className="sr-only" htmlFor="username">
-              Username {USERNAME}
+              Username 
             </Label>
             <Input className="w-full" id="username" placeholder="Username" type="text" onChange={
               (e) => setUsername(e.target.value)
