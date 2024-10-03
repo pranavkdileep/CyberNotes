@@ -6,9 +6,8 @@ import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-const USERNAME = process.env.USERNAME;
+const USERNAME = process.env.USERNAME;//
 const PASSWORD = process.env.PASSWORD;
-
 
 
 export function AdminLogin() {
