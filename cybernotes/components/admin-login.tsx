@@ -5,7 +5,9 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { USERNAME,PASSWORD } from "@/server/logincredentials";
+
+const USERNAME = process.env.USERNAME;
+const PASSWORD = process.env.PASSWORD;
 
 
 
