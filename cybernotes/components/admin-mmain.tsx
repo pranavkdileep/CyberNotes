@@ -12,8 +12,8 @@ import { addMaterials,addSubject } from "@/app/admin/api";
 import { useRouter } from "next/navigation";
 
 
-const USERNAME = process.env.USERNAME;
-const PASSWORD = process.env.PASSWORD;
+const USERNAME = process.env.NEXT_PUBLIC_USERNAME;
+const PASSWORD = process.env.NEXT_PUBLIC_PASSWORD;
 
 
 

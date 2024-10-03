@@ -7,8 +7,8 @@ import { useRouter } from "next/navigation";
 
 import { useState } from "react";
 
-const USERNAME = process.env.USERNAME;//
-const PASSWORD = process.env.PASSWORD;
+const USERNAME = process.env.NEXT_PUBLIC_USERNAME;
+const PASSWORD = process.env.NEXT_PUBLIC_PASSWORD;
 
 
 export function AdminLogin() {
