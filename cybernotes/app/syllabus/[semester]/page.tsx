@@ -19,11 +19,7 @@ export interface Datas {
 //   },
 // ]
 
-export default async function Cart({
-    params
-  } : {
-    params: { semester: string }
-  }): Promise<JSX.Element> {
+export default async function Cart({params} : {params: { semester: string }}): Promise<JSX.Element> {
     let semnumber = params.semester.replace('s','')
     noStore();
     const { rows } = await sql`SELECT DISTINCT Subjects.title,Subjects.description,Subjects.url from Subjects,Syllabus where Subjects.url = Syllabus.subjectcode and Syllabus.semester = ${semnumber}`;
