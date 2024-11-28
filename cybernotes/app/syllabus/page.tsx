@@ -31,7 +31,7 @@ const datas: Datas[] = [
   {
     title: 'S5',
     description: 'Download the syllabus for Semester 5',
-    url: '/s5'
+    url: '/syllabus/s5'
   },
   {
     title: 'S6',

@@ -28,6 +28,7 @@ export function AdminMmain() {
   }
   const [materialType, setMaterialType] = useState("");
   const [semester, setSemester] = useState("");
+  const [scheme, setScheme] = useState("");
   const [subjectCode, setSubjectCode] = useState("");
   const [subjectName, setSubjectName] = useState("");
   const [title, setTitle] = useState("");
@@ -82,6 +83,24 @@ export function AdminMmain() {
                 </SelectContent>
               </Select>
           </div>
+
+          <div className="grid gap-2">
+            <Label htmlFor="scheme">Select Scheme</Label>
+            <Select onValueChange={
+              (value) => {
+                setScheme(value);
+              }
+            }>
+                <SelectTrigger id="scheme">
+                  <SelectValue placeholder="Select Scheme" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="Materials">2019</SelectItem>
+                  <SelectItem value="Syllabus">2024</SelectItem>
+                </SelectContent>
+              </Select>
+          </div>
+          
           <div className="grid gap-2">
             <Label htmlFor="semester">Semester</Label>
             <Input id="semester" placeholder="Enter semester" onChange={
