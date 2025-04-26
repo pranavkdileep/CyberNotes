@@ -40,17 +40,6 @@ declare global {
 
 export function Mainhero() {
   return (
-    <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window._shareustag = window._shareustag || {cmd:[]};
-    _shareustag.cmd.push(function() {
-      var slot1 = _shareustag.defineAutoAdSlot('/shareus-admanager/8188567387/zU874wOCy1/MyAAds');
-    });
-              `,
-            }}
-            
-          ></script>
     <div key="1" className="flex flex-col min-h-[100dvh] overflow-hidden">
       <header className="px-4 lg:px-6 h-14 flex items-center">
         <Link className="flex items-center justify-center" href="#">
