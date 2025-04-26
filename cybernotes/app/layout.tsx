@@ -27,18 +27,7 @@ export default function RootLayout({
         ></script>
       </head>
       <body className={inter.className}>
-      <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window._shareustag = window._shareustag || {cmd:[]};
-    _shareustag.cmd.push(function() {
-      var slot1 = _shareustag.defineAutoAdSlot('/shareus-admanager/8188567387/zU874wOCy1/MyAAds');
-    });
-              `,
-            }}
-            
-          ></script>
-          
+
         {children}
         <Analytics />
         <GoogleAnalytics gaId="G-3E9CVT98PP" />
