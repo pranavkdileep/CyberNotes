@@ -27,11 +27,7 @@ export default function RootLayout({
         ></script>
       </head>
       <body className={inter.className}>
-        {children}
-        <Analytics />
-        <GoogleAnalytics gaId="G-3E9CVT98PP" />
-        
-          <script
+      <script
             dangerouslySetInnerHTML={{
               __html: `
                 window._shareustag = window._shareustag || {cmd:[]};
@@ -42,6 +38,10 @@ export default function RootLayout({
             }}
             
           ></script>
+          
+        {children}
+        <Analytics />
+        <GoogleAnalytics gaId="G-3E9CVT98PP" />
       </body>
     </html>
   );
