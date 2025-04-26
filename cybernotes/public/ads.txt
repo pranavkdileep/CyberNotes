@@ -1,0 +1,7 @@
+#ShareusADX GAM360 ~ Us/wyoming ~ publisher.shareus.io
+google.com, pub-2153431257373264, DIRECT, f08c47fec0942fa0
+google.com, pub-1101293790648476, DIRECT, f08c47fec0942fa0
+google.com, pub-1956856209985681, DIRECT, f08c47fec0942fa0
+google.com, pub-8804303781641925, DIRECT, f08c47fec0942fa0
+google.com, pub-1101293790648476, DIRECT, f08c47fec0942fa0
+#shareusadsend
