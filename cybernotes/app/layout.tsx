@@ -23,6 +23,7 @@ export default function RootLayout({
         <script
           type="module"
           src="https://securepubads.shareus.io/scripts/tag/js/gpt.js"
+          async
         ></script>
       </head>
       <body className={inter.className}>
@@ -39,6 +40,7 @@ export default function RootLayout({
                 });
               `,
             }}
+            
           ></script>
         </div>
       </body>
