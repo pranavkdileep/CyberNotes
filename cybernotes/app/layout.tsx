@@ -30,6 +30,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <GoogleAnalytics gaId="G-3E9CVT98PP" />
+        
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -41,7 +42,6 @@ export default function RootLayout({
             }}
             
           ></script>
-        </div>
       </body>
     </html>
   );
