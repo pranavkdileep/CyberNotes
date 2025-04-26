@@ -30,14 +30,13 @@ export default function RootLayout({
         {children}
         <Analytics />
         <GoogleAnalytics gaId="G-3E9CVT98PP" />
-        <div id="shareus-admanager-8188567387-rqqS8xm7Or">
           <script
             dangerouslySetInnerHTML={{
               __html: `
                 window._shareustag = window._shareustag || {cmd:[]};
-                _shareustag.cmd.push(function() {
-                  var slot1 = _shareustag.defineSlot('/shareus-admanager/8188567387/rqqS8xm7Or/Bodyad', ["Responsive"], 'shareus-admanager-8188567387-rqqS8xm7Or');
-                });
+    _shareustag.cmd.push(function() {
+      var slot1 = _shareustag.defineAutoAdSlot('/shareus-admanager/8188567387/zU874wOCy1/MyAAds');
+    });
               `,
             }}
             
