@@ -31,6 +31,11 @@ export default function RootLayout({
         {children}
         <Analytics />
         <GoogleAnalytics gaId="G-3E9CVT98PP" />
+        <script
+          type="module"
+          src="https://securepubads.shareus.io/scripts/tag/js/gpt.js"
+          async
+        ></script>
       </body>
     </html>
   );

@@ -97,6 +97,26 @@ export function Mainhero() {
             </div>
           </div>
         </section>
+
+        {/* --- Ad Placement 1: After Hero Section --- */}
+        <div className="flex justify-center my-8">
+          <div id="shareus-admanager-8188567387-VXlWWDc58k">
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window._shareustag = window._shareustag || {cmd:[]};
+                  _shareustag.cmd.push(function() {
+                    var slot1 = _shareustag.defineSlot('/shareus-admanager/8188567387/VXlWWDc58k/rectangle', [[300,250]],'shareus-admanager-8188567387-VXlWWDc58k');
+                  });
+                `,
+              }}
+            />
+          </div>
+        </div>
+        {/* --- End Ad Placement 1 --- */}
+
+
+
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -211,6 +231,26 @@ export function Mainhero() {
         </div>
         
       </footer>
+
+      {/* --- Ad Placement 2: Before Footer --- */}
+      <div className="flex justify-center my-8">
+        <div id="shareus-admanager-8188567387-VXlWWDc58k">
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window._shareustag = window._shareustag || {cmd:[]};
+                _shareustag.cmd.push(function() {
+                  var slot1 = _shareustag.defineSlot('/shareus-admanager/8188567387/VXlWWDc58k/rectangle', [[300,250]],'shareus-admanager-8188567387-VXlWWDc58k');
+                });
+              `,
+            }}
+          />
+        </div>
+      </div>
+      {/* --- End Ad Placement 2 --- */}
+
+
+
     </div>
   )
 }
