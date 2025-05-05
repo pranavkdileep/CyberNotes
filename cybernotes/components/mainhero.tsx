@@ -114,6 +114,22 @@ export function Mainhero() {
           </div>
         </div>
         {/* --- End Ad Placement 1 --- */}
+        {/* --- Ad Placement 1b: Responsive Ad After Featured Materials --- */}
+        <div className="flex justify-center my-8">
+          <div id="shareus-admanager-8188567387-MAbdzz5Ysa">
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window._shareustag = window._shareustag || {cmd:[]};
+                  _shareustag.cmd.push(function() {
+                    var slot1 = _shareustag.defineSlot('/shareus-admanager/8188567387/MAbdzz5Ysa/auto', ["Responsive"],'shareus-admanager-8188567387-MAbdzz5Ysa');
+                  });
+                `,
+              }}
+            />
+          </div>
+        </div>
+        {/* --- End Ad Placement 1b --- */}
 
 
 
